@@ -10,7 +10,7 @@
     <main>
         <section id="login">
             <div id="imagem">
-
+                
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -18,7 +18,10 @@
                     Seja Bem-Vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.
                 </p>
                 <form action="login.php" method="post" autocomplete="on">
-
+                    <label for="iusername">Login<input type="text" name="username" id="iusername" required placeholder="Nome do Usuário" maxlength="30"></label> <br>
+                    <label for="ipassword">Password <input type="password" name="userpassword" id="ipassword" required placeholder="Mínimo 8 digitos" maxlength="30" minlength="8"></label> <br>
+                    <input type="submit" value="Entrar"> <br>
+                    <input type="reset" value="Esqueci a senha">
                 </form>
             </div>
         </section>
