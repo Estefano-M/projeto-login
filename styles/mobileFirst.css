@@ -31,7 +31,12 @@ section#login{
     height: 700px;
     border-radius: 15px;
     box-shadow: 01px 0px 10px rgba(0, 0, 0, 0.507);
+    
+    /* Esse elemento OVERFLOW faz que o conteúdo que passar do BOX, seja 'escondido' como nesse exemplo aqui que a imagem está passando um pouco*/
     overflow: hidden;
+    
+    /*Esse elemento TRANSITION ele causa uma ananimação quando vai de um tamanho de tela para outro de acordo com o que está aqui em baixo:  */
+    transition: 0.5s, height 0.5s;
 }
 section#login > div#imagem{
     background: #5f2c82 url(../images/pattern-building-1280x1921.jpg);

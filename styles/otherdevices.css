@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px){
+    section#login{
+        width: 80vw;
+    }
+    section#login > div#imagem{
+        width: 30%;
+        height: 100%;
+
+        /* Esse elemento "FLOAT" faz com que o conteúdo seja mostrado na parte LEFT, RIGHT or NONE da tela.  */
+        float: left;
+        display: block;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+        height: 100%;
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+    section#login{
+        width: 850px;
+    }
+    section#login > div#imagem{
+        width: 50%;
+    }
+    section#login > div#formulario{
+        width: 50%;
+    }
+    
+}
