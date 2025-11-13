@@ -25,7 +25,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 300px;
     height: 660px;
@@ -35,6 +34,7 @@ section#login{
     /* Esse elemento OVERFLOW faz que o conteúdo que passar do BOX, seja 'escondido' como nesse exemplo aqui que a imagem está passando um pouco*/
     overflow: hidden;
     
+    transform: translate(-50%, -50%);
     /*Esse elemento TRANSITION ele causa uma ananimação quando vai de um tamanho de tela para outro de acordo com o que está aqui em baixo:  */
     transition: width 0.5s, height 0.5s;
 
@@ -67,19 +67,41 @@ section#login > div#formulario > form > div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border: none;
+    border: 2px solid #5f2c82;
     border-radius: 07px;
+    
     /* Lembra lá no começo que ao colocar somente dois valores, o primeiro valor é referente a EM CIMA e EM BAIXO e o segundo valor é ESQUERDA e DIREITA! */
     margin: 05px 0px;
+    
     padding-left: 05px; 
 }
 section#login > div#formulario > form > div.campo > span{
     color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 04px;
 }
 /* Lembrando que o elemento "LABEL" não é um "INPUT" e por isso não coloquei ele da mesma forma que os input mais para baixo.  */
 section#login > div#formulario > form > div.campo > label{
     display: none;
-}    
+}
+section#login > div#formulario > form > div.campo > input{
+    height: 100%;
+    
+    /* Usei o atributo "CALC" pois ele que vai calcular o width: 100% e preencher os restante do 40px que eu coloquei no width do SPAN(icone). Lembrandando que eu tenho que colocar o valor "-" para poder encaixar(ou preencher).  */
+    width: calc(100% - 45px);
+    
+    background-color: #5cc9c5;
+    font-size: 1em;
+    border-radius: 07px;
+    
+    /* Aqui usei elemento "transform" com a atributo "TRANSLATE Y" com o valor "-" para fazer com que a borda do input email e senha pudesse ficar dentro do background da div.campo. SEMPRE COLOQUE O ELEMENTO TRANSFORM POR ÚLTIMO*/
+    transform: translateY(-12px);
+}
+section#login > div#formulario > form > div.campo > input:focus-within{
+    background-color: white;
+    color: black;
+}
 section#login > div#formulario > form > input[type=submit]{
     display: block;
     font-size: 1em;

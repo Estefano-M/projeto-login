@@ -8,6 +8,7 @@
     }
     section#login{
         width: 80vw;
+        height: 400px;
     }
     section#login > div#imagem{
         width: 30%;
@@ -28,13 +29,14 @@
     }
     section#login > div#formulario > p{
         font-size: 1.3em;
+        margin: 10px 05px;
     }
 }
 /* Laptop Devices */
 @media screen and (min-width: 992px) {
     section#login{
         width: 850px;
-
+        height: 500px;
     }
     section#login > div#imagem{
         width: 50%;
@@ -50,5 +52,6 @@
 @media screen and (min-width: 1200px) {
     section#login{
         width: 1050px;
+        height: 600px;
     }
 }
