@@ -36,7 +36,10 @@ section#login{
     overflow: hidden;
     
     /*Esse elemento TRANSITION ele causa uma ananimação quando vai de um tamanho de tela para outro de acordo com o que está aqui em baixo:  */
-    transition: 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+
+    /* Esse element TRANSITION com o atributo TIMING-FUNCTION com o valor EASE, faz com que ao realizar a animação de transição, seja de forma suave! */
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     background: #5f2c82 url(../images/pattern-building-1280x1921.jpg);
